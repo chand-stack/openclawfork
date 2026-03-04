@@ -1,0 +1,3 @@
+[deploy]
+# Disable health check so deployment succeeds (proxy/origin can block /setup/healthz)
+healthcheckPath = ""
