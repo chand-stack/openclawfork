@@ -3,7 +3,8 @@ node_modules
 .env
 docker-compose.extra.yml
 dist
-pnpm-lock.yaml
+# pnpm-lock.yaml - unignored so Railway/Docker build can COPY it
+# pnpm-lock.yaml
 bun.lock
 bun.lockb
 coverage
