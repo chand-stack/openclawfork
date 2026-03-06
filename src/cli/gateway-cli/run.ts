@@ -187,11 +187,9 @@ async function runGatewayCommand(opts: GatewayRunOpts) {
     defaultRuntime.error("Invalid port");
     defaultRuntime.exit(1);
   }
-  const bindRaw =
-    (toOptionString(opts.bind) ??
-      cfg.gateway?.bind ??
-      process.env.OPENCLAW_GATEWAY_BIND?.trim()) ||
-    "loopback";
+  const bindFromSources =
+    toOptionString(opts.bind) ?? cfg.gateway?.bind ?? process.env.OPENCLAW_GATEWAY_BIND?.trim();
+  const bindRaw = bindFromSources || "loopback";
   const bind =
     bindRaw === "loopback" ||
     bindRaw === "lan" ||
