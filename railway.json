@@ -1,7 +1,3 @@
 {
-  "$schema": "https://railway.com/railway.schema.json",
-  "deploy": {
-    "healthcheckPath": null,
-    "healthcheckTimeout": null
-  }
+  "$schema": "https://railway.com/railway.schema.json"
 }
