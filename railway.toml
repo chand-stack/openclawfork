@@ -1,4 +1,0 @@
-[deploy]
-# Use root path so health check passes (proxy returns 200 for /; /setup/healthz can fail behind proxy)
-healthcheckPath = "/"
-healthcheckTimeout = 60
