@@ -1,3 +1,4 @@
 [deploy]
-# Disable health check so deployment succeeds (proxy/origin can block /setup/healthz)
-healthcheckPath = ""
+# Use root path so health check passes (proxy returns 200 for /; /setup/healthz can fail behind proxy)
+healthcheckPath = "/"
+healthcheckTimeout = 60
