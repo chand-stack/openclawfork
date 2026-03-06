@@ -1,0 +1,4 @@
+[deploy]
+# Use gateway /healthz (returns 200) instead of /setup/healthz
+healthcheckPath = "/healthz"
+healthcheckTimeout = 120
